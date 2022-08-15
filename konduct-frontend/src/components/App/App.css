@@ -1,0 +1,39 @@
+*,
+html,
+body {
+  @apply m-0 p-0 box-border text-secondary font-roboto;
+}
+
+body,
+html,
+#root {
+  @apply bg-primary min-h-full;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-tertiary;
+}
+
+body::-webkit-scrollbar {
+  @apply bg-primary w-4;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-accent_dark rounded-md;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent_darker;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
